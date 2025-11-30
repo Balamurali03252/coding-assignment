@@ -1,0 +1,29 @@
+package javacodingAssignment;
+
+import java.util.Scanner;
+import java.util.Arrays;
+
+public class sortStringChars {
+
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter a string: ");
+        String str = sc.nextLine();
+
+        // Convert string to character array
+        char[] chars = str.toCharArray();
+
+        // Sort the array
+        Arrays.sort(chars);
+
+        // Convert back to string
+        String sortedStr = new String(chars);
+
+        System.out.println("\nString after sorting characters: " + sortedStr);
+
+        sc.close();
+    }
+}
+
