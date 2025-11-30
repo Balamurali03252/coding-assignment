@@ -1,0 +1,26 @@
+package javacodingAssignment;
+
+import java.util.Scanner;
+
+public class replaceCharOrSubstring {
+
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter a string: ");
+        String str = sc.nextLine();
+
+        System.out.print("Enter character/substring to replace: ");
+        String oldStr = sc.nextLine();
+
+        System.out.print("Enter new character/substring: ");
+        String newStr = sc.nextLine();
+
+        String result = str.replace(oldStr, newStr);
+
+        System.out.println("\nString after replacement: " + result);
+
+        sc.close();
+    }
+}
